@@ -1,0 +1,22 @@
+Dagger 2:-
+
+:- consumer (@inject)
+:- producer (@module, @provides, @binds)
+:- connector (@component)
+
+
+required library for dagger 2:-
+
+  id 'kotlin-kapt'
+  def dagger_version = "2.40"
+      implementation "com.google.dagger:dagger:$dagger_version"
+      kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+
+  :- concepts covered-
+  -components
+  -modules
+  -injection
+  -qualifier
+  -factories
+  -scopes
